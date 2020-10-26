@@ -1,0 +1,65 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#f9c1cf 0%, #ffeaef 100%);
+
+}
+
+.word{
+    position:relative;
+    top: 50px;
+    font-family: Meiryo;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #434343;
+
+}
+
+.circle{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: #fc6e8f;
+    border: 1px solid #fc6e8f;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    top: 90px;
+
+}
+
+.gazou{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    top: -80px;
+    width: 150px;
+    animation:10s linear infinite rotation1;
+}
+
+@keyframes rotation1{
+    0%{ transform:rotate(0);}
+    100%{ transform:rotate(360deg); }
+  }
+
+.keyframe {
+    animation-name: anim_sc;
+    transform: scale(0.9, 0.9);
+  }
+  
+  @keyframes anim_sc {
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+  .animation {
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+  }
+  
